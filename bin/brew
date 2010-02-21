@@ -119,7 +119,7 @@ begin
         # EDITOR isn't a good fit here, we need a GUI client that actually has
         # a UI for projects, so apologies if this wasn't what you expected,
         # please improve it! :)
-        exec 'mate', *Dir["#{HOMEBREW_REPOSITORY}/Library/*"]<<
+        exec 'mvim', *Dir["#{HOMEBREW_REPOSITORY}/Library/*"]<<
                           "#{HOMEBREW_REPOSITORY}/bin/brew"<<
                           "#{HOMEBREW_REPOSITORY}/README.md"
       else
